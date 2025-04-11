@@ -59,6 +59,8 @@ class Looper(commands.Cog):
 
 @bot.event
 async def on_ready():
+    print("bot is a go")
+    
     embed = discord.Embed(
         title = "Event Notifier is now online!",
         description = "Notifications will be sent when limited-time Events and Doges are available.",
