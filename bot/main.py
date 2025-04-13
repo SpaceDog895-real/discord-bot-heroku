@@ -61,14 +61,14 @@ class Looper(commands.Cog):
 async def on_ready():
     print("bot is a go")
     
-    embed = discord.Embed(
-        title = "Event Notifier is now online!",
-        description = "Notifications will be sent when limited-time Events and Doges are available.",
-        color = 0xFFFF00,
-    )
+    # embed = discord.Embed(
+    #     title = "Event Notifier is now online!",
+    #     description = "Notifications will be sent when limited-time Events and Doges are available.",
+    #     color = 0xFFFF00,
+    # )
 
-    channel = bot.get_channel(972907643595284590)
-    await channel.send(embed=embed)
+    # channel = bot.get_channel(972907643595284590)
+    # await channel.send(embed=embed)
     await bot.add_cog(Looper(bot))
 
 if __name__ == '__main__':
